@@ -15,4 +15,9 @@ A study case of an simple notepad application using the CA principles.
 ### Entities
 
 - Using _Value Objects_ to bring more behavior and complexity to the application's entities (as the entities, as well as the application domain, are very simple). In other words, all the entity properties (like user email, password, note title) are classes and its equality is given by its values instead of identities (like the same memory address)
-- The data validation can be made in the external layers or directly in the entities. The first approach take off the complexity and responsibility from the entities, but it open gaps for creating entities with invalid data. I think (and the author too) that data validation (since this data is related with the application domain) must be done in the entities layer. _“Make illegal states irrepresentable!”_ (Yaron Minsky)
+- The data validation can be made in the external layers or directly in the entities. The first approach take off the complexity and responsibility from the entities, but it open gaps for creating entities with invalid data. I think (and the author too) that data validation (since this data is related with the application domain) must be done in the entities layer. _“Make illegal states unrepresentable!”_ (Yaron Minsky)
+
+## Annotations
+
+- The obsession for primitive types is considered a code smell. Always that is possible, try to use Value Objects
+- The definition about what is a business rule (entities layer) and an application rule (application/usecases layer) is variable, depends of the application
