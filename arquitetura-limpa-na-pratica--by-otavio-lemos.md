@@ -25,7 +25,8 @@ A study case of an simple notepad application using the CA principles.
 - The MVC (model-view-controller) can be implemented entirely in this layer
 - In the study case, this layer will contains the web controllers and the middleware that verifies the access token for some API endpoint. In that point is already defined that the application will be a web API, but that adapters will be generic and framework-agnostic
 
-## Annotations
+## General Annotations
 
 - The obsession for primitive types is considered a code smell. Always that is possible, try to use Value Objects
 - The definition about what is a business rule (entities layer) and an application rule (application/usecases layer) is variable, depends of the application
+- The Repository pattern is from _Patterns of Enterprise Application Architecture_ (Martin Fowler). Also is mentioned in the _Domain Driven Design_ (Eric Evans)
